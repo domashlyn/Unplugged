@@ -1,0 +1,1095 @@
+/*! HTML5 Boilerplate v6.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+/*  line-height: 1.4; */
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* --- Global Styles ---*/
+
+body, html {
+  width:100%;
+  height:100%;
+  margin-left:auto;
+  margin-right:auto;
+  padding:0;
+  overflow-x:hidden;
+  background-color:#eeeeee;
+  font-family: 'Source Sans Pro', sans-serif;
+  color:#222222;
+  font-size:14px;
+  font-weight:normal;
+}
+main {
+  max-width:1440px;
+}
+
+a {
+  font-weight:bold;
+  color:#23a4cc;
+  text-decoration:none;
+  font-size:1em;
+}
+
+a:hover {
+}
+
+h1, h2, h3, h4  {
+}
+
+h1  {
+  font-size:1.5em;
+}
+
+h2  {
+  font-size:1.15em;
+  margin:0;
+}
+
+h3  {
+  font-size:0.75em;
+}
+
+h4  {
+}
+
+p  {
+  font-size:1em;
+  line-height:auto;
+}
+p a {
+  text-transform:uppercase;
+  color:#222222;
+}
+
+img {
+  width:100%;
+  height:auto;
+}
+
+header #main-header {
+  width:100%;
+  height:auto;
+  background-color:#acacac;
+  border-bottom:1px solid #acacac;
+  top:0;
+  overflow:hidden;
+}
+
+form input {
+ border:1px solid #acacac;
+}
+form button {
+  color:#eeeeee;
+}
+
+input  {
+  width:100%;
+  height:2.5em;
+}
+
+button a {
+  color:#eeeeee;
+}
+
+button.cta  {
+  background-color:#ff1256;
+  width:100%;
+  height:2.5em;
+  padding: 2%;
+  margin: 2% 0;
+  font-size:1.3em;
+  font-weight:700;
+  font-variant:small-caps;
+  box-shadow:2px 2px #d19aaa;
+  border:none;
+
+}
+
+button.cta:hover  {
+}
+
+button.cta-2 {
+  background-color:#b21e49;
+  width:100%;
+  height:2.5em;
+  margin: 2% 0;
+  font-size:1.3em;
+  font-weight:400;
+  font-variant:small-caps;
+  box-shadow:2px 2px #d19aaa;
+  border:none;
+}
+
+button.cta-2:hover {
+}
+
+figure {
+  margin:0;
+  padding:0;
+}
+
+footer {
+  clear:both;
+  position:sticky;
+  right:0;
+  bottom:0;
+  left:0;
+  top:100%;
+  width:100%;
+  height:fit-content;
+  border-top:1px solid #dddddd;
+  background-color:#eeeeee;
+}
+
+figure#footer-logo {
+  display:flex;
+  justify-content:center;
+  align-items:flex-start;
+  clear:both;
+}
+.display-none {
+  display:none;
+}
+
+
+nav i {
+  padding-right: 10px;
+}
+
+
+
+/* --- COLORS ---
+Dark Pink (Magenta): #b21e49
+Light Grey: #eeeeee
+Bright Pink: #ff1256
+Dark Grey: #222222
+Blue: #23a4cc
+--- COLORS END --- */
+
+
+/* --- Main Header Styles --- */
+body {
+  width:100%;
+  font-weight:normal;
+}
+
+
+#logo {
+  width:100%;
+  max-width:400px;
+  margin:0 auto;
+}
+
+nav {
+  width:100%;
+}
+
+nav ul {
+  padding:0;
+  margin:0;
+  width:100%;
+}
+
+nav li {
+  font-size:1.30em;
+  list-style:none;
+  text-transform:uppercase;
+  text-align:center;
+  padding: 3% 0;
+  width:100%;
+  height:auto;
+  border-bottom:1px solid #cfcacb;
+  border-width:100%;
+  margin:0;
+}
+nav#main-nav li a {
+  color:#222222;
+}
+
+nav#main-nav .highlight {
+  color:#ff1256;
+}
+
+
+/* --- Main Styles --- */
+
+main {
+  width:94%;
+  margin:auto;
+  padding:0 1%;
+  clear:both;
+}
+
+/* --- Featured Item Styles --- */
+
+.hero-area {
+  width:100%;
+}
+
+.top-story {
+  width: 100%;
+}
+
+figure.hero-img {
+  margin:0;
+}
+
+.hero-img {
+  width:100%;
+}
+
+/* --- Sidebar Styles --- */
+
+aside {
+  width:100%;
+  border-top:1px solid #cfcacb;
+  padding:3% 0;
+}
+
+.sidebar {
+  width:100%;
+}
+
+.newsletter {
+  width:100%;
+}
+
+.newsletter h2 {
+  margin:1% 0;
+}
+
+.newsletter form {
+  margin:2% 0;
+}
+
+.newsletter form input {
+  padding:1% 0;
+}
+
+.newsletter form button {
+  padding:1% 0;
+}
+
+/* --- Feed Styles ---*/
+
+.feed {
+ width:100%;
+ padding:3% 0;
+ border-top:1px solid #cfcacb;
+ display:flex;
+ flex-direction:column;
+ justify-content:center;
+}
+
+.feed-item {
+  width:100%;
+  clear:both;
+  border-top:1px solid #cfcacb;
+  padding:3% 0;
+}
+
+
+.feed-type {
+  text-transform:uppercase;
+}
+
+.feed-flex {
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+}
+
+.feed-img {
+  width:46%;
+  margin:2% 0;
+  border:2px solid #cfcacb;
+}
+
+.feed-info {
+  width:46%;
+  margin:2% 0;
+}
+
+.feed-info h2 a {
+  color: #222222;
+}
+.feed-info p {
+  line-height:1;
+}
+
+/* --- About Styles --- */
+.contact {
+}
+
+.contact-info {
+  width:100%;
+  font-size:1.15em;
+}
+
+.contact-info ul {
+  list-style:none;
+  padding:0;
+}
+
+.contact-info ul li {
+  display:inline-block;
+  vertical-align:top;
+}
+.map-container {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden;
+  border:solid 1px #cfcacb;
+}
+
+.map-container iframe {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.mission {
+  margin:2% 0;
+  clear:both;
+}
+
+.team {
+}
+
+.team-member {
+  padding:2% 0;
+  clear:both;
+}
+
+.team-img {
+  width:40%;
+  padding-bottom:40%;
+  float:left;
+  margin-right:20px;
+  border:1px solid #ccc;
+}
+
+.team-name {
+}
+
+.team-title {
+  margin-top:2%;
+}
+
+.team-description {
+}
+
+#team-img-jack {
+  background-image: url("../img/team-jack.jpg");
+  background-size:cover;
+}
+
+#team-img-lana {
+  background-image: url("../img/team-lana.jpg");
+  background-size:cover;
+}
+
+#team-img-willow {
+  background-image: url("../img/team-willow.jpg");
+  background-size:cover;
+}
+
+
+/* --- FAQ Styles --- */
+.question {
+  border-bottom:1px solid #cfcacb;
+  padding:7% 0;
+}
+
+.question.first-item {
+  padding-top:3%;
+}
+
+.question h2 {
+  font-weight:normal;
+}
+.question .email {
+  margin-bottom:0;
+}
+
+/* --- Footer Styles --- */
+
+figure#footer-logo {
+  height:fit-content;
+}
+
+#footer-logo img {
+  max-width:47.5%;
+  height:auto;
+  object-fit:contain;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    -webkit-clip-path: none;
+    clip-path: none;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+/* --- Tablet Styles ---*/
+@media (min-width: 768px) {
+  /* --- Global Styles ---*/
+  h1 {
+    font-size:1.70rem;
+  }
+  h2 {
+    font-size:1.28rem;
+  }
+  h3 {
+    font-size:0.85rem;
+  }
+  p {
+    font-size:1rem;
+  }
+
+  /* --- Header Styles ---*/
+  #main-header {
+    background-color:#dddddd;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    align-content:center;
+  }
+  #logo {
+    width:58%;
+    margin:0px;
+    margin-left:2%;
+    padding:0px;
+  }
+  #logo img {
+    max-width:371px;
+    display:block;
+    font-size:0px;
+  }
+  #main-nav {
+    font-size:1.15rem;
+    width:37%;
+    margin:0 auto;
+  }
+  nav ul {
+    width:fit-content;
+    text-align:center;
+    display:inline;
+    margin:0;
+  }
+  nav li {
+    padding:3% 5%;
+    display:inline;
+    list-style:none;
+    border:hidden;
+  }
+  .home-flex {
+    display:flex;
+    flex-direction:row-reverse;
+  }
+
+  /* --- Main Styles --- */
+  main {
+    width:94%;
+  }
+
+  /* --- Featured Item Styles --- */
+  .hero-area {
+    padding:3% 0;
+    border-bottom:1px solid #dddddd;
+    width:100%;
+    display:block;
+  }
+  .top-story {
+    width:100%;
+    display:flex;
+    flex-direction:row;
+  }
+  .hero-img {
+    width:58%;
+    padding-right:2%;
+  }
+  .top-info {
+    width:37%;
+    padding-left:2%;
+  }
+  .top-info h1 {
+    margin-top:0;
+    line-height:1;
+  }
+  .top-info p {
+    line-height:1.57;
+  }
+
+  /* --- Sidebar Styles --- */
+  aside.sidebar {
+    width:42%;
+    border:hidden;
+    padding:0;
+  }
+  .sidebar div {
+    border-bottom:1px solid #cfcacb;
+    padding:5% 3%;
+    width:96%;
+  }
+  .newsletter, .about, .faq {
+    display:block;
+    width:90%
+  }
+  .about p span, .faq p span {
+    display:inline;
+  }
+
+  /* --- Feed Styles --- */
+  .feed {
+    width:58%;
+    margin:0;
+    border-right:1px solid #cfcacb;
+    border-top:hidden;
+  }
+  .feed h2 {
+    padding-top:5%;
+  }
+  h3.feed-type {
+    margin-top:0;
+  }
+  .feed-flex {
+    display:flex;
+    height:-moz-fit-content;
+    height:-webkit-fit-content;
+    height:fit-content;
+    justify-content:flex-start;
+    align-content:flex-start;
+    align-items:flex-start;
+  }
+  figure.feed-img {
+    width:27%;
+    max-width:135px;
+    margin:0;
+    margin-right:1$;
+  }
+  .feed-info {
+    width:60%;
+    margin:0;
+    margin-left:5%;
+  }
+  .feed-info h2 {
+    padding-top:0;
+  }
+
+  /* --- About Styles --- */
+  .contact-info {
+    width:35%;
+    float:left;
+  }
+  .map-container {
+    padding-bottom:40%;
+    width:55%;
+    height:0;
+    float:right;
+    border: 1px solid #333333;
+    margin:3% 0;
+  }
+  .map-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .mission {
+    border-top:1px solid #cfcacb;
+    border-bottom:1px solid #cfcacb;
+  }
+  .mission p {
+    line-height:1.57;
+  }
+  .team-img {
+    width:25%;
+    padding-bottom:25%;
+  }
+  .team-title {
+    margin-top:.25rem;
+  }
+
+  /* --- FAQ Styles --- */
+  .question {
+    padding:5% 0;
+  }
+  .question.first-item {
+    padding-top:2%;
+  }
+  .question p {
+    line-height:1.57;
+  }
+
+  /* --- Footer Styles --- */
+
+  #footer-logo {
+    width:33%;
+    margin:auto;
+  }
+
+  #footer-logo img {
+    max-width:209px;
+    max-height:60px;
+  }
+}
+
+/* --- Desktop Styles --- */
+@media (min-width: 940px) {
+  .home-flex {
+    display:initial;
+  }
+
+  h3 {
+    font-size:0.86rem;
+  }
+  p {
+    font-size:1.15rem;
+  }
+  /* -- Header Styles -- */
+  header#main-header {
+    width:100%;
+    height:fit-content;
+    margin:auto;
+  }
+  #logo {
+    width:40%;
+    float:left;
+    padding-left:1%;
+    line-height:0;
+  }
+  #main-nav {
+    font-size:1.15rem;
+    width:50%;
+    float:left;
+    padding:auto;
+    margin-left:7%;
+  }
+
+  /* --- Featured Item Styles --- */
+  .hero-area {
+    width:60%;
+    padding:0;
+    padding-right:3%;
+    margin-top:3%;
+    float:left;
+    border-right:1px solid #dddddd;
+    border-bottom:hidden;
+  }
+  .hero-area .top-story {
+    display:block;
+  }
+  .top-story {
+    width:100%;
+  }
+  .top-story h1 {
+    font-size:2.25em;
+  }
+  .hero-img {
+    width:100%;
+  }
+  .hero-img img {
+    max-width:620px;
+  }
+  .top-info {
+    width:100%;
+    float:none;
+  }
+  .top-info h1 {
+    margin-top:0.67em;
+  }
+
+  /* --- Sidebar Styles --- */
+  aside.sidebar {
+    width:35%;
+    margin-top:3%;
+    float:left;
+    border-top:none;
+    border-left:1px solid #dddddd;
+  }
+  .sidebar div {
+    padding:2% 4%;
+  }
+  .sidebar div.newsletter {
+    padding-top:0;
+  }
+  aside.sidebar h2 {
+    font-size:2.15rem;
+    margin:0 auto;
+  }
+  .newsletter, .upcoming, .faq {
+    display:block;
+  }
+  .about p span, .faq p span {
+    display:none;
+  }
+  div .faq {
+    border-bottom:0px;
+  }
+
+  /* --- Feed Styles --- */
+  .feed {
+    width:100%;
+    padding:2% 0;
+    clear:both;
+    border-right:hidden;
+    border-top:1px solid #cfcacb;
+  }
+  .feed h2 {
+    font-size:1.29em;
+    padding:0;
+  }
+  .feed h3 {
+    margin-top:0;
+  }
+  .feed p {
+    display:block;
+  }
+  .feed-item {
+    padding:2% 0;
+  }
+  figure.feed-img {
+    width:20%;
+    height:fit-content;
+    float:left;
+    margin-right:1%;
+    max-width:210px;
+  }
+  .feed-info {
+    float:left;
+    width:75%;
+    margin-left:1%;
+  }
+  .feed-info h2 {
+    font-size:1.5rem;
+    width:85%;
+  }
+  .feed-info p {
+    line-height:1.25;
+    margin:1% 0;
+  }
+
+  /* --- About Styles --- */
+  .contact-info {
+    width:27%;
+    margin-left:2%;
+  }
+  .map-container {
+    width:65%;
+    margin-right:2%;
+    margin-bottom:4%;
+  }
+  .mission {
+    padding:2% 0;
+  }
+  .mission p {
+    line-height:1.375;
+  }
+  .team-member {
+    padding:2%;
+  }
+  .team-description {
+    display:block;
+  }
+  p.team-description {
+    line-height:1.375;
+  }
+
+  /* --- FAQ Styles --- */
+  .question h2 {
+    font-size:1.72rem;
+  }
+  .question p {
+    font-size:1.35rem;
+    line-height:1.375;
+  }
+
+  /* --- Footer Styles --- */
+  footer {
+    width:100%;
+  }
+}
+
+/* --- Fixing Styles --- */
+.first-item {
+  border-top:hidden;
+}
+
+.last-item {
+  border-bottom:hidden;
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
