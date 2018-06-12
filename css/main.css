@@ -191,7 +191,7 @@ button.cta  {
   padding: 2%;
   margin: 2% 0;
   font-size:1.3em;
-  font-weight:700;
+  font-weight:bold;
   font-variant:small-caps;
   box-shadow:2px 2px #d19aaa;
   border:none;
@@ -207,7 +207,7 @@ button.cta-2 {
   height:2.5em;
   margin: 2% 0;
   font-size:1.3em;
-  font-weight:400;
+  font-weight:normal;
   font-variant:small-caps;
   box-shadow:2px 2px #d19aaa;
   border:none;
